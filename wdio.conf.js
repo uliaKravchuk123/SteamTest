@@ -64,7 +64,12 @@ exports.config = {
                 prefs: {
                     'safebrowsing' : {
                         'enabled' : true,
-                    }
+                    },
+                    download: {
+                        prompt_for_download: false, 
+                        directory_upgrade: true,
+                        default_directory: process.cwd()
+                    },
                 },
             },
             acceptInsecureCerts: true
